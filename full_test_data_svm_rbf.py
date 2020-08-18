@@ -1,5 +1,6 @@
 """
-This module give the classification results for test data.
+This module give the classification results for test data using SVM with RBF
+kernel.
 Email: harikrishnannb07@gmail.com
 Dtd: 2 - August - 2020
 
@@ -26,22 +27,17 @@ Computes the accuracy_svm_rbf, fscore_svm_rbf
 
 import os
 import numpy as np
-import pandas as pd
-from sklearn.model_selection import KFold
 from sklearn.metrics import f1_score, accuracy_score
 from sklearn import svm
-from sklearn.model_selection import StratifiedKFold
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix as cm
 from sklearn.metrics import classification_report
-import ChaosFEX.feature_extractor as CFX
 from load_data_synthetic import get_data
 #from Codes import classification_report_csv_
 
 
 classification_type = "concentric_circle_noise"
 
-folder_name= "full-testdata"
+folder_name = "full-testdata"
 target_names = ['class-0', 'class-1']
 path = os.getcwd()
 
@@ -63,18 +59,11 @@ print("**** Genome data details ******")
 
 for class_label in range(np.max(full_artificial_label)+1):
     print("Total Data instance in Class -", class_label, " = ", full_artificial_label.tolist().count([class_label]))
-
-
-
     print(" train data = ", (full_artificial_data.shape[0]))
     print("val data  = ", (full_artificial_test_data.shape[0]))
 
-    
-
-
 # Start of svm_rbf classifier
 svm_rbf_classifier = svm.SVC(kernel='rbf', gamma='scale')
-
 svm_rbf_classifier.fit(full_artificial_data, full_artificial_label[:, 0])
 predicted_svm_rbf_val_label = svm_rbf_classifier.predict(full_artificial_test_data)
 
@@ -86,13 +75,9 @@ report_svm_rbf = classification_report(full_artificial_test_label, predicted_svm
 print(report_svm_rbf)
 
 #classification_report_csv_(report_svm_rbf, num_classes).to_csv(result_path_svm_rbf+'svm_rbf_report_'+ str(iterations) +'.csv', index=False)
-   
-
 confusion_matrix_svm_rbf = cm(full_artificial_test_label, predicted_svm_rbf_val_label)
 print("Confusion matrixfor svm_rbf\n", confusion_matrix_svm_rbf)
 
 # End of svm_rbf classifier.
 # saving the f1-score
 np.save(result_path_svm_rbf + 'f1score.npy', f1score_svm_rbf)
-
-
