@@ -28,9 +28,12 @@ Reference Paper:
 1. git-clone into a working directory.
 
 ### Goal is to classify the following overlapping concentric circle data.
-<p align="center">
-  <img src="https://github.com/HarikrishnanNB/occd_experiments/tree/master/total_data_image/total_occd_data.jpg" width="350" >
-</p>
+<img
+src="total_data_image/total_occd_data.jpg"
+raw=true
+alt="Subject Pronouns"
+style="margin-right: 10px;"
+/>
 
 ### How to run
 
