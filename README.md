@@ -1,4 +1,4 @@
-# Neurochaos-SVM based classification of syntheticaly generated overlapping concentric circle data.
+# Neurochaos-SVM based classification of synthetically generated overlapping concentric circle data.
 
 
 ## ChaosFEX - Feature Extraction using Chaos
@@ -36,6 +36,9 @@ Reference Paper:
 5. quad_data_picking.py: Support files required to run the main codes.
 6. plot_low_training_sample_regime.py: Code to plot the results corresponding to the low training sample regime (main_low_training_sample_regime.py).
 7. plot_features.py: Code to plot the chaotic feature space (firing time, firing rate, energy, entropy)
+
+### Goal is to classify the following overlapping concentric circle data.
+
 ### Licence
 
 Copyright 2020 Harikrishnan N. B., Pranay Yadav, and Nithin Nagaraj
