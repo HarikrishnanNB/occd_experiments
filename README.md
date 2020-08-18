@@ -31,6 +31,8 @@ Reference Paper:
 <img
 src="total_data_image/total_occd_data.jpg"
 raw=true
+width="350"
+height="350"
 alt="Subject Pronouns"
 style="margin-right: 10px;"
 />
