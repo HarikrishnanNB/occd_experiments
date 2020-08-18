@@ -4,12 +4,6 @@ Email: harikrishnannb07@gmail.com
 Dtd: 2 - August - 2020
 
 
-This module does the five_fold_crossvalidation and saves the classifcation
-report. At present the results for binary classification and five class classification is saved.
-Author: Harikrishnan N B
-Email: harikrishnannb07@gmail.com
-Dtd: 2 - August - 2020
-
 Parameters
 ----------
 classification_type : string

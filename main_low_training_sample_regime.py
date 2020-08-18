@@ -1,9 +1,12 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Aug 14 22:01:52 2020
+This module contains the code for the low training sample regime.
 
-@author: harik
+Author: Harikrishnan N B
+Email: harikrishnannb07@gmail.com
+
+
 """
+
 import os
 import numpy as np
 from sklearn.metrics import f1_score, accuracy_score
