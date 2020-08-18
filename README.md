@@ -27,6 +27,9 @@ Reference Paper:
 
 1. git-clone into a working directory.
 
+### Goal is to classify the following overlapping concentric circle data.
+![alt text](https://github.com/HarikrishnanNB/occd_experiments/tree/master/total_data_image/total_occd_data.jpg?raw=true)
+
 ### How to run
 
 1. full_test_data_neurochaos.py: Code for the classfication of test data using Neurochaos-SVM.
@@ -37,7 +40,6 @@ Reference Paper:
 6. plot_low_training_sample_regime.py: Code to plot the results corresponding to the low training sample regime (main_low_training_sample_regime.py).
 7. plot_features.py: Code to plot the chaotic feature space (firing time, firing rate, energy, entropy)
 
-### Goal is to classify the following overlapping concentric circle data.
 
 ### Licence
 
