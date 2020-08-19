@@ -1,18 +1,20 @@
 """
-This module contains the necessary function used in 
+This module contains the necessary function required to run the main files
+(main_low_training_sample_regime.py, plot_features.py)
 
+Author: Harikrishnan N B
+Dtd: 19 - 08 - 2020
+Email: harikrishnannb07@gmail.com
 """
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import logging
-
-
 
 
 def get_data(DATA_NAME):
     """
+    This module loads the traindata, trainlabel, testdata, testlabel.
+    The dataset loaded in not normalized in this module.
     Parameters
     ----------
     DATA_NAME : TYPE : string
@@ -59,7 +61,8 @@ def get_data(DATA_NAME):
 
 def class_wise_data(TRAINDATA, TRAINLABEL):
     """
-    
+    This module returns data belongining to class-0 and class-1 in two separate
+    2D arrays.
 
     Parameters
     ----------
@@ -94,10 +97,10 @@ def class_wise_data(TRAINDATA, TRAINLABEL):
             p = p+1
     return CLASS_0, CLASS_1
 
-
 def data_in_quadrants(DATA):
     """
-
+    This module returns data belonging to quadrant 1, 2, 3 and 4 for data belonging
+    to class-0 and class-1.
     Parameters
     ----------
     DATA : array, 2D
@@ -106,13 +109,13 @@ def data_in_quadrants(DATA):
     Returns
     -------
     QUAD1 : array,2D
-        DESCRIPTION : Data lieing in quadrant 1.
+        DESCRIPTION : Data belonging to quadrant 1.
     QUAD2 : array,2D
-        DESCRIPTION : Data lieing in quadrant 2.
+        DESCRIPTION : Data belonging to quadrant 2.
     QUAD3 : array,2D
-        DESCRIPTION : Data lieing in quadrant 3.
+        DESCRIPTION : Data belonging to quadrant 3.
     QUAD4 : array,2D
-        DESCRIPTION : Data lieing in quadrant 4.
+        DESCRIPTION : Data belonging to quadrant 4.
 
     """
     SIGN = np.sign(DATA)
