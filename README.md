@@ -46,7 +46,8 @@ style="margin-right: 10px;"
 5. quad_data_picking.py: Support files required to run the main codes.
 6. plot_low_training_sample_regime.py: Code to plot the results corresponding to the low training sample regime (main_low_training_sample_regime.py).
 7. plot_features.py: Code to plot the chaotic feature space (firing time, firing rate, energy, entropy)
-8. hyperparameter_tuning_neurochaos.py: File to find the Optimum Hyperparameters for ChaosFEX
+8. hyperparameter_tuning_neurochaos.py: File to find the Optimum Hyperparameters for ChaosFEX.
+9. plot_hyperparamter_tuning_ChaosFEX.py: Code to plot the results corresponding to the hyperparameter tuning (hyperparameter_tuning_neurochaos.py).
 
 ### Licence
 
