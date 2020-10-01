@@ -39,14 +39,14 @@ style="margin-right: 10px;"
 
 ### How to run
 
-1. full_test_data_neurochaos.py: Code for the classfication of test data using Neurochaos-SVM.
+1. full_test_data_neurochaos.py: Code for the classfication of test data using ChaosFEX.
 2. full_test_data_svm_rbf.py: Code for the classfication of test data using SVM with RBF kernel.
 3. main_low_training_sample_regime.py: Code for the classification of test data using Neurochaos-SVM and SVM with RBF kernel in the low trainng sample regime.
 4. load_data_synthetic.py: Code to load the normalized train and test data.
 5. quad_data_picking.py: Support files required to run the main codes.
 6. plot_low_training_sample_regime.py: Code to plot the results corresponding to the low training sample regime (main_low_training_sample_regime.py).
 7. plot_features.py: Code to plot the chaotic feature space (firing time, firing rate, energy, entropy)
-
+8. hyperparameter_tuning_neurochaos.py: File to find the Optimum Hyperparameters for ChaosFEX
 
 ### Licence
 
