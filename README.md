@@ -48,7 +48,7 @@ style="margin-right: 10px;"
 7. plot_features.py: Code to plot the chaotic feature space (firing time, firing rate, energy, entropy)
 8. hyperparameter_tuning_neurochaos.py: File to find the Optimum Hyperparameters for ChaosFEX.
 9. plot_hyperparamter_tuning_ChaosFEX.py: Code to plot the results corresponding to the hyperparameter tuning (hyperparameter_tuning_neurochaos.py).
-10 Codes corresponding to noise experiments: (a) occd_train_ccd_test_chaosfex.py (Train with OCCCD and test with CCD using ChaosFEX), (b) ccd_train_ccd_test_chaosfex.py (Train with CCCD and test with CCD using ChaosFEX), (c) svm_occd_train_ccd_test.py (Train with OCCD and test with CCD using SVM RBF kernel), (d) svm_ccd_train_ccd_test.py (Train with CCD and test with CCD using SVM RBF kernel).
+10 Codes corresponding to noise experiments: (a) occd_train_ccd_test_chaosfex.py (Train with OCCD and test with CCD using ChaosFEX), (b) ccd_train_ccd_test_chaosfex.py (Train with CCD and test with CCD using ChaosFEX), (c) svm_occd_train_ccd_test.py (Train with OCCD and test with CCD using SVM RBF kernel), (d) svm_ccd_train_ccd_test.py (Train with CCD and test with CCD using SVM RBF kernel).
 
 ### Licence
 
