@@ -1,4 +1,4 @@
-# Neurochaos-SVM based classification of synthetically generated overlapping concentric circle data.
+# ChaosFEX+SVM: A Neurochaos Learning Architecture.
 
 
 ## ChaosFEX - Feature Extraction using Chaos
